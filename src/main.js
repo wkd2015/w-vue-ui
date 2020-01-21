@@ -1,8 +1,11 @@
+import './style/index.scss'
 import Vue from 'vue'
-import App from './App.vue'
+import Demo from './Demo.vue'
+import WVUI from './index'
 
 Vue.config.productionTip = false
+Vue.use(WVUI)
 
 new Vue({
-  render: h => h(App)
+  render: h => h(Demo)
 }).$mount('#app')

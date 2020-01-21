@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve",
+    "dev:docs": "vuepress dev docs",
+    "build": "vue-cli-service build --target lib --name w-vue-ui ./src/index.js",
+    "build:docs": "vuepress build docs",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lint:fix": "eslint --fix --ext .vue,.js ./src"
   },
   "dependencies": {
     "core-js": "^3.4.4",
@@ -25,7 +28,8 @@
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.2.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
