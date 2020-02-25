@@ -1,10 +1,11 @@
 module.exports = {
     title: "W-Vue-UI",
     description: "Vue组件库",
+    base: '/w-vue-ui/',
     themeConfig: {
         nav: [
             {
-                text: 'Home',
+                text: '首页',
                 link: '/'
             },
             {
@@ -14,10 +15,21 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: '组件',
-                collapsable: true,
+                title: '开发指南',
+                collapsable: false,
                 children: [
-                    'views/components/modal/'
+                    '/'
+                ]
+            },
+            {
+                title: '组件',
+                collapsable: false,
+                children: [
+                    {
+                        title: '通用',
+                        collapsable: false,
+                        children: ['views/components/modal/']
+                    }
                 ]
             }
         ]

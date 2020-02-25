@@ -7,6 +7,7 @@
     "dev:docs": "vuepress dev docs",
     "build": "vue-cli-service build --target lib --name w-vue-ui ./src/index.js",
     "build:docs": "vuepress build docs",
+    "deploy:docs": "bash deploy.sh",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "lint:fix": "eslint --fix --ext .vue,.js ./src"
