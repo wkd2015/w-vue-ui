@@ -1,17 +1,18 @@
 <template>
-    <div>
-
-    </div>
+  <div></div>
 </template>
 
 <script>
 export default {
-  name: 'Modal',
+
+  
+  name: "Modal",
   props: {
     value: {
       type: Boolean,
       default: false
     }
-  }
-}
+  },
+  computed: {}
+};
 </script>
